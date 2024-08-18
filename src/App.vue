@@ -13,7 +13,7 @@ import quadartURL from '@/assets/quadart.png'
         w-40 h-40 p-2
         md:w-48 md:h-48 md:p-4">
         <div class="rounded-full">
-          <img :src="avatarURL">
+          <img :src="avatarURL" alt="Portrait of owner of site.">
         </div>
       </div>
       <div class="card-body items-center text-center flex flex-col">
@@ -23,17 +23,20 @@ import quadartURL from '@/assets/quadart.png'
           Photography on the side
         </div>
         <div class="card-action">
-          <a href="https://www.linkedin.com/in/stefansetyadi96" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/stefansetyadi96"
+           target="_blank" rel="noopener noreferrer" aria-label="Go to LinkedIn">
             <div class="btn btn-square btn-sm btn-outline brand-icon">
               <font-awesome-icon size="xl" icon="fa-brands fa-linkedin"></font-awesome-icon>
             </div>
           </a>
-          <a href="https://github.com/clapmyhands/">
+          <a href="https://github.com/clapmyhands/"
+          target="_blank" rel="noopener noreferrer" aria-label="Go to GitHub">
             <div class="btn btn-square btn-sm btn-outline brand-icon">
               <font-awesome-icon size="xl" icon="fa-brands fa-github"></font-awesome-icon>
             </div>
           </a>
-          <a href="https://www.instagram.com/clapmyhands/">
+          <a href="https://www.instagram.com/clapmyhands/"
+          target="_blank" rel="noopener noreferrer" aria-label="Go to Instagram">
             <div class="btn btn-square btn-sm btn-outline brand-icon">
               <font-awesome-icon size="xl" icon="fa-brands fa-instagram"></font-awesome-icon>
             </div>
@@ -56,7 +59,7 @@ import quadartURL from '@/assets/quadart.png'
             Using the concept of a Quadtree, post-process images into blocks of colors
           </p>
           <div class="card-actions justify-end">
-            <a href="https://clapmyhands.com/QuadArt" class="link link-accent">Open</a>
+            <a href="https://clapmyhands.com/QuadArt" class="link">Open</a>
           </div>
         </div>
       </div>
@@ -72,6 +75,10 @@ import quadartURL from '@/assets/quadart.png'
 
 .brand-icon:not(:hover) {
   border-width: 0;
+}
+
+.link {
+  color: #8400ff;
 }
 
 </style>
